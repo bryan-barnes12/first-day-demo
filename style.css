@@ -1,0 +1,154 @@
+:root {
+    --darkest: #556b2f;
+    --dark: #553d36;
+    --mid: #b8b8aa;
+    --light: #cfc0bd;
+    --lightest: #ddd5d0;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: var(--darkest);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: black solid 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark);
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--mid);
+    display: flex;
+    border: black solid 1px;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightest);
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2em 2em 10em black;
+}
+
+#livestream {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /* width: 100%; */
+    padding: 0;
+}
+
+iframe {
+    border: solid black 1px;
+    /* width: 100%; */
+    height:100%
+}
+
+#main1 {
+    border: black solid 1px;
+    flex: 25%;
+    width: 25%;
+    height: 200px;
+}
+
+#main2 {
+    border: black solid 1px;
+    flex: 25%;
+    width: 25%;
+    height: 200px;
+}
+
+#main3 {
+    border: black solid 1px;
+    flex: 25%;
+    width: 25%;
+    height: 200px;
+}
+
+#main4 {
+    border: black solid 1px;
+    flex: 25%;
+    width: 25%;
+    height: 200px;
+}
+
+footer {
+    display: flex;
+    height: 20px;
+    border: black solid 1px;
+}
+
+#footer1 {
+    background-color: chocolate;
+    display: flex;
+    width: 100%;;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+@media (max-width: 1200px) {
+    
+    #main1, #main2, #main3, #main4 {
+        flex: 50%
+    }
+}
+
+@media (max-width: 800px) {
+    
+    #main1, #main2, #main3, #main4 {
+        flex: 100%
+    }
+}
+
+table {
+    border: black solid 1px;
+}
+
+td {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+.cell {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: none;
+    font-size: 14pt;
+}
+
+#puzzle_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+}
+

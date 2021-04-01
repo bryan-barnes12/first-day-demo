@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./calcstyle.css">
+</head>
+<body onload="setDisplay()">
+    <section id="calculator">
+        <figure class="display"><input id="display"></input></figure>
+        <figure id="sign" class="sm_but"><button id="posneg" onclick="sign()">+/-</button></figure>
+        <figure class="clear"><button id="c_ac" onclick="clearDisplay()">c/ac</button></figure>
+        <figure id="exponent" class="sm_but"><button id="expo" onclick="operation('exponentiation')">^</button></figure>
+        <figure id="division" class="sm_but"><button id="div" onclick="operation('division')">/</button></figure>
+        <figure id="multiplication" class="sm_but"><button id="mult" onclick="operation('multiplication')">*</button></figure>
+        <figure id="_7" class="sm_but"><button id="seven" onclick="changeDisplay(7)">7</button></figure>
+        <figure id="_8" class="sm_but"><button id="eight" onclick="changeDisplay(8)">8</button></figure>
+        <figure id="_9" class="sm_but"><button id="nine" onclick="changeDisplay(9)">9</button></figure>
+        <figure id="subtraction" class="sm_but"><button id="minus" onclick="operation('subtraction')">-</button></figure>
+        <figure id="_4" class="sm_but"><button id="four" onclick="changeDisplay(4)">4</button></figure>
+        <figure id="_5" class="sm_but"><button id="five" onclick="changeDisplay(5)">5</button></figure>
+        <figure id="_6" class="sm_but"><button id="six" onclick="changeDisplay(6)">6</button></figure>
+        <figure id="addition" class="sm_but"><button id="plus" onclick="operation('addition')">+</button></figure>
+        <figure id="_1" class="sm_but"><button id="one" onclick="changeDisplay(1)">1</button></figure>
+        <figure id="_2" class="sm_but"><button id="two" onclick="changeDisplay(2)">2</button></figure>
+        <figure id="_3" class="sm_but"><button id="three" onclick="changeDisplay(3)">3</button></figure>
+        <figure id="equals" class="two-tall"><button id="equal" onclick="equals()">=</button></figure>
+        <figure id="_0" class="sm_but"><button id="zero" onclick="changeDisplay(0)">0</button></figure>
+        <figure id="point" class="sm_but"><button id="decimal" onclick="changeDisplay(y)">.</button></figure>
+    </section>
+    <section id="graphingCalculator">
+        <div id="graphingDisplay"></div>
+    </section>
+<script src="./ti-83.js"></script>
+</body>
+</html>

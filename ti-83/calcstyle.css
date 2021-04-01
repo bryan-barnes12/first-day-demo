@@ -1,0 +1,389 @@
+#calculator {
+    display: grid;
+    grid-template-columns: 20% 5px 20% 5px 20% 5px 10%;
+    grid-template-rows: 20% 5px 15% 5px 15% 5px 15% 5px 15% 5px 15%;
+    padding: 20px;
+}
+
+figure {
+    width: 100%;
+    height: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--mid);
+    color: var(--dark);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--dark);
+    color: var(--mid);
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-right: 5px;
+    background-color: var(--light);
+    color: var(--dark);
+    text-align: right;
+    font-family: monospace, 'Lucida Console', Monaco;
+    font-size: 1.5em;
+}
+
+.display {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+#sign {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    height: 100%;
+}
+
+.clear {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#exponent {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#division {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+
+#multiplication {
+    grid-column: 7 / 8;
+    grid-row: 3 / 4;
+}
+
+#_7 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+#_8 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+#_9 {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+}
+
+#subtraction {
+    grid-column: 7 / 8;
+    grid-row: 5 / 6;
+}
+
+#_4 {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+#_5 {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+
+#_6 {
+    grid-column: 5 / 6;
+    grid-row: 7 / 8;
+}
+
+#addition {
+    grid-column: 7 / 8;
+    grid-row: 7 / 8;
+}
+
+#_1 {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+
+#_2 {
+    grid-column: 3 / 4;
+    grid-row: 9 / 10;
+}
+
+#_3 {
+    grid-column: 5 / 6;
+    grid-row: 9 / 10;
+}
+
+#equals {
+    grid-column: 7 / 8;
+    grid-row: 9 / 12;
+    height: 100%;
+}
+
+#_0 {
+    grid-column: 1 / 4;
+    grid-row: 11 / 12;
+}
+
+#point {
+    grid-column: 5 / 6;
+    grid-row: 11 / 12;
+}
+
+#graphingCalculator {
+    display: grid;
+    grid-template-columns: 4fr repeat(4, 5px 4fr);
+    grid-template-rows: 16fr 20px 1.5fr 20px 2fr repeat(8, 5px 2fr);
+    width: auto;
+}
+
+#graphingCalculator div{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#graphingCalculator button {
+    font-size: .75em;
+}
+
+#graphingDisplay {
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+    --pixel-size: 0.25em;
+    display: grid;
+    grid-template-columns: repeat(96, var(--pixel-size));
+    grid-template-rows: repeat(64, var(--pixel-size));
+    width: auto;
+}
+
+#graphingDisplay {
+    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+}
+
+#graphingDisplay div {
+    height: var(--pixel-size);
+    width: var(--pixel-size);
+    border: none;
+}
+
+.pixel-off {
+    background-color: var(--light);
+}
+
+.pixel-on {
+    background-color: var(--dark);
+}
+
+.pixel-off:hover {
+    background-color: var(--dark);
+    cursor: none;
+}
+.pixel-on:hover {
+    background-color: var(--mid);
+    cursor: none;
+}
+
+#Yequals {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+#WINDOW {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+#ZOOM {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+#TRACE {
+    grid-column: 7 / 8;
+    grid-row: 3 / 4;
+}
+#GRAPH {
+    grid-column: 9 / 10;
+    grid-row: 3 / 4;
+}
+
+#SECOND {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}#MODE {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}#DEL {
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
+}
+
+#ALPHA {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}#COMMONVARS {
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}#STAT {
+    grid-column: 5 / 6;
+    grid-row: 7 / 8;
+}
+
+#MATH {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+#APPS {
+    grid-column: 3 / 4;
+    grid-row: 9 / 10;
+}
+#PRGM {
+    grid-column: 5 / 6;
+    grid-row: 9 / 10;
+}
+#VARS {
+    grid-column: 7 / 8;
+    grid-row: 9 / 10;
+}
+#CLEAR {
+    grid-column: 9 / 10;
+    grid-row: 9 / 10;
+}
+
+#INVERSE {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+}
+#SIN {
+    grid-column: 3 / 4;
+    grid-row: 11 / 12;
+}
+#COS {
+    grid-column: 5 / 6;
+    grid-row: 11 / 12;
+}
+#TAN {
+    grid-column: 7 / 8;
+    grid-row: 11 / 12;
+}
+#EXP {
+    grid-column: 9 / 10;
+    grid-row: 11 / 12;
+}
+
+#SQUARED {
+    grid-column: 1 / 2;
+    grid-row: 13 / 14;
+}
+#COMMA {
+    grid-column: 3 / 4;
+    grid-row: 13 / 14;
+}
+#LEFTPAR {
+    grid-column: 5 / 6;
+    grid-row: 13 / 14;
+}
+#RIGHTPAR {
+    grid-column: 7 / 8;
+    grid-row: 13 / 14;
+}
+#DIVIDE {
+    grid-column: 9 / 10;
+    grid-row: 13 / 14;
+}
+
+#LOG {
+    grid-column: 1 / 2;
+    grid-row: 15 / 16;
+}
+#SEVEN {
+    grid-column: 3 / 4;
+    grid-row: 15 / 16;
+}
+#EIGHT {
+    grid-column: 5 / 6;
+    grid-row: 15 / 16;
+}
+#NINE {
+    grid-column: 7 / 8;
+    grid-row: 15 / 16;
+}
+#TIMES {
+    grid-column: 9 / 10;
+    grid-row: 15 / 16;
+}
+
+#LN {
+    grid-column: 1 / 2;
+    grid-row: 17 / 18;
+}
+#FOUR {
+    grid-column: 3 / 4;
+    grid-row: 17 / 18;
+}
+#FIVE {
+    grid-column: 5 / 6;
+    grid-row: 17 / 18;
+}
+#SIX {
+    grid-column: 7 / 8;
+    grid-row: 17 / 18;
+}
+#MINUS {
+    grid-column: 9 / 10;
+    grid-row: 17 / 18;
+}
+
+#STO {
+    grid-column: 1 / 2;
+    grid-row: 19 / 20;
+}
+#ONE {
+    grid-column: 3 / 4;
+    grid-row: 19 / 20;
+}
+#TWO {
+    grid-column: 5 / 6;
+    grid-row: 19 / 20;
+}
+#THREE {
+    grid-column: 7 / 8;
+    grid-row: 19 / 20;
+}
+#PLUS {
+    grid-column: 9 / 10;
+    grid-row: 19 / 20;
+}
+
+#ON {
+    grid-column: 1 / 2;
+    grid-row: 21 / 22;
+}
+#ZERO {
+    grid-column: 3 / 4;
+    grid-row: 21 / 22;
+}
+#POINT {
+    grid-column: 5 / 6;
+    grid-row: 21 / 22;
+}
+#NEGATIVE {
+    grid-column: 7 / 8;
+    grid-row: 21 / 22;
+}
+#ENTER {
+    grid-column: 9 / 10;
+    grid-row: 21 / 22;
+}

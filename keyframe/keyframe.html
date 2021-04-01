@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to left, #363e45 , #93a8ac);
+}
+#movinglogo {
+  position: relative;
+  border-radius: 50px;
+  animation: mymove 4s;
+}
+img:hover {
+  position: relative;
+  animation: myfade .75s;
+  animation-fill-mode: both;
+  border-radius: 50px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  animation: myfader 1s;
+}
+@keyframes myfade {
+  0%   {opacity: 1;}
+  100%  {opacity: 0;}
+}
+@keyframes myfader {
+  0%   {opacity: 0;}
+  100%  {opacity: 1;}
+}
+
+@keyframes mymove {
+  0%   {top: 0%; left: 100%; opacity: 0;}
+  25%   {top: 100%; left: 75%; opacity: 0;}
+  50%  {top: 0%; left: 50%; opacity: .5;}
+  75%   {top: 100%; left: 25%; opacity: 0;}
+  100%  {top: 0%; left: 0%; opacity: 1;}
+}
+#container {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 0;
+  padding: 10px;
+  background-image: linear-gradient(to left, #363e45 , #93a8ac);
+}
+#card {
+  position: relative;
+  border-radius: 50px;
+  animation: mymove 4s;
+}
+
+
+}
+</style>
+</head>
+<body>
+<nav><div id="movinglogo"><img src="https://bryan-barnes12.github.io/professional-portfolio/assets/images/brokenstar_logo.png" /></div></nav>
+<div id="container">
+    <div id="card"></div>
+</div>
+</body>
+</html>
